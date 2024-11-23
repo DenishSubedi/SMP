@@ -1,3 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.container{ display: inline-block; }
+
+.text{
+    font-size: auto;
+    letter-spacing: 2px;
+    /* border-right: 2px solid; */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+                typing 5s,
+                cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -409,3 +443,5 @@ p {
 .cta-button:hover {
     background-color: #e64a19;
 }
+
+
