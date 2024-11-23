@@ -277,8 +277,24 @@ footer {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    color: red;
+    color: #FF5733;
     background: #000;
+}
+
+.staff-member p .role{
+    color: white;
+}
+
+.staff-member p .staff-name {
+    color: gold;
+}
+
+.staff-member p{
+    color: lightgray;
+}
+
+.staff-member .Role{
+    color: red;
 }
 
 .staff-member:hover {
@@ -392,20 +408,4 @@ p {
 
 .cta-button:hover {
     background-color: #e64a19;
-}
-
-
-
-/* Light Mode Styles */
-.light-mode {
-    background-color: #ffffff; /* Light background */
-    color: #000000; /* Dark text */
-}
-
-.light-mode a {
-    color: #007bff; /* Link color in light mode */
-}
-
-.light-mode .main-section {
-    background-color: #f8f9fa; /* Light section background */
 }
