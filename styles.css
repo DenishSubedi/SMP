@@ -14,7 +14,6 @@ body{
 .text{
     font-size: auto;
     letter-spacing: 2px;
-    /* border-right: 2px solid; */
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -38,12 +37,12 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff9800; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners */
+    background: #ff9800; 
+    border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: #1f1f1f; /* Color of the scrollbar track */
+    background: #1f1f1f; 
 }
 
 html {
@@ -54,8 +53,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+    background-color: #121212; 
+    color: #e0e0e0; 
 }
 
 h1, h2, h3, p {
@@ -76,7 +75,7 @@ p {
 
 /* Header Styles */
 header {
-    background-color: #1f1f1f; /* Darker header */
+    background-color: #1f1f1f; 
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -97,7 +96,6 @@ header {
     margin-bottom: 10px; /* Space below the logo */
 }
 
-/* Navigation Styles */
 /* Navigation Styles */
 nav {
     background-color: #1f1f1f; /* Dark background for the nav */
@@ -174,10 +172,32 @@ button:hover, .cta-button:hover {
 }
 
 /* Hero Section */
-.hero {
-    background: url('your-hero-image.jpg') no-repeat center center/cover;
+/* .hero {
+    background: url('') no-repeat center center/cover;
     color: #ffffff;
-    padding: 60px 20px;
+    padding: 60px 200px;
+    text-align: center;
+} */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 400px; 
+} 
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
